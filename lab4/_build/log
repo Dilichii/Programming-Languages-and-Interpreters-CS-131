@@ -1,0 +1,170 @@
+# dune build typed_imp/typed_imp.bc --root=..
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: "/mnt/c/Users/didil/OneDrive/Documents/Class
+# Notes/CS/CS131/lab4"
+# Auto-detected concurrency: 8
+$ /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune_f60aa9_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/dilichi/.opam/4.14.1/lib/toplevel"
+#  ; ocaml_bin = External "/home/dilichi/.opam/4.14.1/bin"
+#  ; ocaml = Ok External "/home/dilichi/.opam/4.14.1/bin/ocaml"
+#  ; ocamlc = External "/home/dilichi/.opam/4.14.1/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/dilichi/.opam/4.14.1/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/dilichi/.opam/4.14.1/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/dilichi/.opam/4.14.1/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/dilichi/.opam/4.14.1/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/dilichi/.opam/4.14.1/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/mnt/c/Users/didil/OneDrive/Documents/Class Notes/CS/CS131/lab4"
+#        ; "INSIDE_DUNE" :
+#            "/mnt/c/Users/didil/OneDrive/Documents/Class Notes/CS/CS131/lab4/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/mnt/c/Users/didil/OneDrive/Documents/Class Notes/CS/CS131/lab4/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/mnt/c/Users/didil/OneDrive/Documents/Class Notes/CS/CS131/lab4/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/mnt/c/Users/didil/OneDrive/Documents/Class Notes/CS/CS131/lab4/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/home/dilichi/.opam/4.14.1/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.1"
+#      ; standard_library_default = "/home/dilichi/.opam/4.14.1/lib/ocaml"
+#      ; standard_library = "/home/dilichi/.opam/4.14.1/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/typed_imp.ml) > _build/default/typed_imp/.typed_imp.eobjs/typed_imp.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/ast.mli) > _build/default/typed_imp/.typed_imp.eobjs/ast.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/basis.mli) > _build/default/typed_imp/.typed_imp.eobjs/basis.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/error.mli) > _build/default/typed_imp/.typed_imp.eobjs/error.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/eval.mli) > _build/default/typed_imp/.typed_imp.eobjs/eval.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/typecheck.mli) > _build/default/typed_imp/.typed_imp.eobjs/typecheck.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/value.mli) > _build/default/typed_imp/.typed_imp.eobjs/value.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf typed_imp/env.mli) > _build/default/typed_imp/.typed_imp.eobjs/env.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/ast.ml) > _build/default/typed_imp/.typed_imp.eobjs/ast.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -o sexpr/.sexprlib.objs/byte/sexprlib.cmo -c -impl sexpr/sexprlib.ml-gen)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl sexpr/sexpr.ml) > _build/default/sexpr/.sexprlib.objs/sexpr.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl sexpr/loc.ml) > _build/default/sexpr/.sexprlib.objs/loc.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl sexpr/parser.ml) > _build/default/sexpr/.sexprlib.objs/parser.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl sexpr/repl.ml) > _build/default/sexpr/.sexprlib.objs/repl.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamllex -q -o sexpr/lexer.ml sexpr/lexer.mll)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl sexpr/lexer.ml) > _build/default/sexpr/.sexprlib.objs/lexer.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/error.ml) > _build/default/typed_imp/.typed_imp.eobjs/error.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf sexpr/loc.mli) > _build/default/sexpr/.sexprlib.objs/loc.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf sexpr/parser.mli) > _build/default/sexpr/.sexprlib.objs/parser.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf sexpr/lexer.mli) > _build/default/sexpr/.sexprlib.objs/lexer.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf sexpr/repl.mli) > _build/default/sexpr/.sexprlib.objs/repl.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -intf sexpr/sexpr.mli) > _build/default/sexpr/.sexprlib.objs/sexpr.mli.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Loc.cmi -c -intf sexpr/loc.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Loc.cmo -c -impl sexpr/loc.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/basis.ml) > _build/default/typed_imp/.typed_imp.eobjs/basis.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Sexpr.cmi -c -intf sexpr/sexpr.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Lexer.cmi -c -intf sexpr/lexer.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Parser.cmi -c -intf sexpr/parser.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Sexpr.cmo -c -impl sexpr/sexpr.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Repl.cmi -c -intf sexpr/repl.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/env.ml) > _build/default/typed_imp/.typed_imp.eobjs/env.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Lexer.cmo -c -impl sexpr/lexer.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Parser.cmo -c -impl sexpr/parser.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Sexprlib -o sexpr/.sexprlib.objs/byte/sexprlib__Repl.cmo -c -impl sexpr/repl.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/typecheck.ml) > _build/default/typed_imp/.typed_imp.eobjs/typecheck.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o sexpr/sexprlib.cma sexpr/.sexprlib.objs/byte/sexprlib.cmo sexpr/.sexprlib.objs/byte/sexprlib__Loc.cmo sexpr/.sexprlib.objs/byte/sexprlib__Sexpr.cmo sexpr/.sexprlib.objs/byte/sexprlib__Lexer.cmo sexpr/.sexprlib.objs/byte/sexprlib__Parser.cmo sexpr/.sexprlib.objs/byte/sexprlib__Repl.cmo)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/value.ml) > _build/default/typed_imp/.typed_imp.eobjs/value.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamldep.opt -modules -impl typed_imp/eval.ml) > _build/default/typed_imp/.typed_imp.eobjs/eval.ml.d
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -no-alias-deps -opaque -o typed_imp/.typed_imp.eobjs/byte/dune__exe.cmo -c -impl typed_imp/.typed_imp.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Error.cmi -c -intf typed_imp/error.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Ast.cmi -c -intf typed_imp/ast.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Error.cmo -c -impl typed_imp/error.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Env.cmi -c -intf typed_imp/env.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Ast.cmo -c -impl typed_imp/ast.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Value.cmi -c -intf typed_imp/value.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Typecheck.cmi -c -intf typed_imp/typecheck.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Env.cmo -c -impl typed_imp/env.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Value.cmo -c -impl typed_imp/value.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Basis.cmi -c -intf typed_imp/basis.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Typecheck.cmo -c -impl typed_imp/typecheck.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Eval.cmi -c -intf typed_imp/eval.mli)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Basis.cmo -c -impl typed_imp/basis.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Typed_imp.cmo -c -impl typed_imp/typed_imp.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -bin-annot -I typed_imp/.typed_imp.eobjs/byte -I sexpr/.sexprlib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o typed_imp/.typed_imp.eobjs/byte/dune__exe__Eval.cmo -c -impl typed_imp/eval.ml)
+$ (cd _build/default && /home/dilichi/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -g -o typed_imp/typed_imp.bc sexpr/sexprlib.cma typed_imp/.typed_imp.eobjs/byte/dune__exe.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Error.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Ast.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Env.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Typecheck.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Value.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Basis.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Eval.cmo typed_imp/.typed_imp.eobjs/byte/dune__exe__Typed_imp.cmo)

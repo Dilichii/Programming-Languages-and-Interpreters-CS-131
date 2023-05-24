@@ -1,0 +1,50 @@
+(define sigma3 (m n) 
+    (locals tot)
+    (begin 
+        (set tot 0)
+        (while* (< m n)
+            (set tot (+ tot m))
+            (set m (+ m 1))
+        )
+        (+ tot m)
+    )
+)
+
+(define exp2 (b n) 
+    (locals x y)
+    (begin 
+        (set x 1)
+        (set y 0)
+        (while* (< y n)
+            (set x (* x b))
+            (set y (+ y 1))
+        )
+        x
+    )
+)
+
+(define fact3 (n)
+    (locals f1 f2)
+    (begin
+        (set f1 1)
+        (for (set f2 1) (<= f2 n) (set f2 (+ f2 1))           
+            ((set f1 (* f1 f2)))
+        )
+        f1     
+    )
+)
+
+(define fib3 (n) (locals f1 f2)
+    (begin
+        (set f1 0)
+        (if (= n 0) 0
+            (for (set f2 1) (> n 0) (set n (- n 1))
+                (
+                    (set f1 (+ f1 f2))
+                    (set f2 (- f1 f2))
+                )
+            )
+        )
+        f1     
+    )
+)

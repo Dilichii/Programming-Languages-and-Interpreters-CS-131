@@ -1,0 +1,116 @@
+;; PART A
+
+(define sigma1 (m n)  
+    (
+        begin 
+            (if (> m n) 
+             (- m (+ n 1))
+             ( + m (sigma1 (+ m 1) n))
+             )
+    )
+)
+
+(val tot 0)
+(define sigma2 (m n) 
+    (begin 
+        (while (< m n)
+            ( begin
+                (set tot (+ tot m))
+                (set m (+ m 1))
+            )
+        )
+        (+ tot m)
+    )
+)
+
+(define exp (b n) 
+    (
+        if (>= b 0)
+            (if (> n 0) 
+                (* b (exp b (- n 1)))
+                1
+            )
+            1
+    )
+)
+
+(val save 0)
+(define log (b n)
+    (begin
+        (
+        if (> b 1) 
+            (if (> n 0) 
+                (while (< (exp b save) n)
+                    (set save (+ save 1))
+                )
+                0
+            )
+            0
+        )
+        save
+    )
+)
+
+(define fact1 (n) 
+        (if (= n 0)
+            1
+            (if (= n 1) 
+            (* n n)
+            (* n (fact1 (- n 1)))
+            )
+        )  
+    
+)
+
+(val tot 0)
+(define fact2 (n)
+    ( begin
+        (if (= n 0)
+        (set tot 1)
+        (set tot n))
+        (while (> n 1) 
+            (begin
+                (set tot (* tot (- n 1)))
+                (set n (- n 1))
+            )
+        )
+        tot
+    ) 
+)
+
+(define fib1 (n) 
+    (if (= n 0) 0 
+        (if (= n 1) 1 
+            (if (= n 2) 1
+                (begin
+                    (+ (fib1 (- n 1)) 
+                    (fib1 (- n 2)))
+                )
+            )
+        )
+    )
+)
+
+(val f1 0)
+(val f2 1)
+(define fib2 (n) 
+    (begin
+        (if (= n 0) 0
+            (while (> n 0)
+                (begin
+                    (set f1 (+ f1 f2))
+                    (set f2 (- f1 f2))
+                    (set n (- n 1))
+                )
+            )
+        )
+        f1     
+    )
+)
+
+(define binary (m) 
+    (if (> m 0) 
+        (+ (mod m 2) (* 10 (binary (/ m 2))))
+        0
+    )
+)
